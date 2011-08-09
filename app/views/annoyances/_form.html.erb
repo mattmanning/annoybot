@@ -1,0 +1,25 @@
+<%= form_for(@annoyance) do |f| %>
+  <% if @annoyance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@annoyance.errors.count, "error") %> prohibited this annoyance from being saved:</h2>
+
+      <ul>
+      <% @annoyance.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :words %><br />
+    <%= f.text_field :words %>
+  </div>
+  <div class="field">
+    <%= f.label :handle %><br />
+    <%= f.text_field :handle %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

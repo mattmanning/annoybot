@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Words:</b>
+  <%= @annoyance.words %>
+</p>
+
+<p>
+  <b>Handle:</b>
+  <%= @annoyance.handle %>
+</p>
+
+
+<%= link_to 'Edit', edit_annoyance_path(@annoyance) %> |
+<%= link_to 'Back', annoyances_path %>
