@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110810004136) do
+ActiveRecord::Schema.define(:version => 20110810183523) do
 
   create_table "annoyances", :force => true do |t|
     t.string   "words"
