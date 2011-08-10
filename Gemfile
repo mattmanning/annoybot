@@ -5,7 +5,6 @@ gem 'clockwork'
 gem 'delayed_job'
 gem 'jquery-rails'
 gem 'rails', '3.1.0.rc5'
-gem 'sqlite3'
 gem 'thin'
 gem 'twitter'
 
@@ -20,6 +19,7 @@ end
 group :development do
   gem 'foreman'
   gem 'heroku'
+  gem 'sqlite3'
 end
 
 group :production do
