@@ -4,6 +4,6 @@ class AnnoyerJob
   end
 
   def perform
-    Twitter.update("@#{@screen_name} #{Annoyance.random}")
+    Twitter.update("@#{@screen_name} #{Annoyance.random.words}")
   end
 end
