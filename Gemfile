@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'arel', '= 2.1.4'
+gem 'clockwork'
 gem 'delayed_job'
 gem 'jquery-rails'
 gem 'rails', '3.1.0.rc5'
